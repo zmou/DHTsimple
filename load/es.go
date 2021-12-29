@@ -66,6 +66,8 @@ func InsertToFile(t *Torrent) {
 		return
 	}
 
+	fmt.Println(torrentData)
+
 	_, err = io.WriteString(f, torrentData)
 
 	defer f.Close()
